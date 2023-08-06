@@ -1,0 +1,272 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+<style>
+ body{
+  
+  font-family: 'Gloock', serif;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#nav {
+  list-style-type: none;
+  margin-top:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dee2ff;
+}
+h2
+{
+  color: #dee2ff;
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: #393f4d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #393f4d;
+  color: #dee2ff;
+  font-weight: bold;
+}
+.form-style button{
+
+  width: 89%;
+	height:70%;
+	padding: 5%;
+	background: #dee2ff;
+	border-bottom: 2px solid #393f4d;;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	color: #393f4d;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Times New Roman";
+}
+
+.form-style button:hover {
+  background-color: #393f4d;
+  color: #dee2ff;
+  font-weight: bold;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.left {
+  left: 15;
+  border-right: 0px #dee2ff solid;
+}
+
+.right {
+  right: 0;
+  border-left: 1px #dee2ff solid;
+}
+
+.mytext {
+    border:1px solid #393f4d;
+    border-right:none;
+    padding:4px;
+    margin:0px;
+    float:left;
+    height:42px;
+    overflow:hidden;
+    line-height:16px;
+    width: 300px;
+    margin-left: 54px;
+  }
+
+  .mic {
+      border:1px solid #393f4d;
+      background:#dee2ff;
+      vertical-align:top;
+      padding:0px;
+      margin:0;
+      float:left;
+      height:42px;
+      overflow:hidden;
+      width:5em;
+      text-align:center;
+      line-height:16px;
+  }
+  
+
+.submit {
+    border:1px solid #393f4d;
+    height: 42px;
+    width: 160px;
+    text-align: center;
+    background-color: #dee2ff;
+    color: #393f4d;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Times New Roman";
+    vertical-align:top;
+}
+.submit:hover {
+  background-color: #393f4d;
+  color: #dee2ff;
+  font-weight: bold;
+}
+.td {
+  color: #dee2ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body
+{
+  background-color: #1b263b
+}
+
+.form-style{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+
+}
+.form-style h1, .form-style a{
+	padding: 20px 0;
+  font-size: 24px;
+	font-weight: bold;
+  font-family: "Times New Roman";
+	text-align: center;
+	margin: -16px -16px 16px -16px;
+  color:#dee2ff;
+}
+.form-style input[type="text"],
+.form-style input[type="password"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color:#0000a0 ;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style input[type="text"]:focus,
+.form-style input[type="password"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+	box-shadow: 0 0 5px #0000a0;
+	padding: 3%;
+	border: 1px solid #0000a0;
+}
+
+.site-form span,label{
+  color: #dee2ff;
+}
+.errorlist{
+    color: red;
+    font-weight: bold;
+}
+</style>
+<title>Homepage</title> 
+</head>
+<div style="background-color:#1b263b;color:#dee2ff;padding:10 10 1 10;border: 1px #dee2ff groove;margin-bottom:0;">
+
+
+</div>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">SmartASL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}"><i class="fas fa-user">Home</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'animation' %}"><i class="fas fa-user">Animation</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}"><i class="fas fa-user">Sign Up</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}"><i class="fas fa-user">Log-Out</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}"><i class="fas fa-user">Log-In</i></a>
+        </li><!--
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-shopping-cart">Contact</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-sign-out-alt">About</i></a>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+<div class="wrapper" >
+  {% block content %}
+  {% endblock %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
